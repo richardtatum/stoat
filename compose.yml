@@ -82,7 +82,7 @@ services:
         condition: service_healthy
     volumes:
       - type: bind
-        source: ./Revolt.toml
+        source: ../files/Revolt.toml
         target: /Revolt.toml
     restart: always
 
@@ -96,7 +96,7 @@ services:
         condition: service_started
     volumes:
       - type: bind
-        source: ./Revolt.toml
+        source: ../files/Revolt.toml
         target: /Revolt.toml
     restart: always
 
@@ -116,7 +116,7 @@ services:
         condition: service_started
     volumes:
       - type: bind
-        source: ./Revolt.toml
+        source: ../files/Revolt.toml
         target: /Revolt.toml
     restart: always
 
@@ -125,7 +125,7 @@ services:
     image: ghcr.io/revoltchat/january:20250930-2
     volumes:
       - type: bind
-        source: ./Revolt.toml
+        source: ../files/Revolt.toml
         target: /Revolt.toml
     restart: always
 
@@ -134,7 +134,7 @@ services:
     image: ghcr.io/revoltchat/gifbox:20250930-2
     volumes:
       - type: bind
-        source: ./Revolt.toml
+        source: ../files/Revolt.toml
         target: /Revolt.toml
     restart: always
 
@@ -148,7 +148,7 @@ services:
         condition: service_started
     volumes:
       - type: bind
-        source: ./Revolt.toml
+        source: ../files/Revolt.toml
         target: /Revolt.toml
     restart: always
 
@@ -164,7 +164,7 @@ services:
         condition: service_healthy
     volumes:
       - type: bind
-        source: ./Revolt.toml
+        source: ../files/Revolt.toml
         target: /Revolt.toml
     restart: always
 
