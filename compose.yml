@@ -62,7 +62,7 @@ services:
   caddy:
     image: docker.io/caddy
     restart: always
-    env_file: .env.web
+    env_file: ../files/.env.web
     ports:
       - "80"
     volumes:
@@ -104,7 +104,7 @@ services:
   web:
     image: ghcr.io/revoltchat/client:master
     restart: always
-    env_file: .env.web
+    env_file: ../files/.env.web
 
   # File server
   autumn:
